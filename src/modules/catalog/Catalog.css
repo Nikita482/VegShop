@@ -1,10 +1,19 @@
 .catalog {
   width: 100%;
-  padding: 0 50px;
+  padding: 0 50px 50px 50px;
+  margin-top: 60px;
 }
 
 .catalog__card {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   gap: 15px;
+}
+
+.catalog__name {
+  padding-top: 60px;
+  margin-bottom: 50px;
+  font-weight: 600;
+  font-size: 32px;
+  color: rgba(0, 0, 0, 1);
 }

@@ -1,4 +1,8 @@
 .card {
-  /* width: 23%; */
-  /* background-color: red; */
+  height: auto;
+  border: 1px solid transparent !important;
+}
+
+.card:hover {
+  border: 1px solid grey !important;
 }

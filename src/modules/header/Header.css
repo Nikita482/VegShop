@@ -1,23 +1,78 @@
 .header {
   width: 100%;
-  padding: 0 20px;
-  margin: 0 auto;
+  height: 60px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  gap: 10px;
-  position: relative;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
   background-color: rgba(255, 255, 255, 1);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  color: rgba(33, 37, 41, 1);
+}
+
+.header__name {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  top: 12px;
+  font-weight: 600;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 1);
+  background-color: rgba(247, 247, 247, 1);
+  border-radius: 31px;
+  padding-left: 10px;
+}
+
+.header__shop {
+  background-color: rgba(84, 180, 106, 1);
+  color: white;
+  border-radius: 21px;
+  margin-left: 10px;
+  font-weight: 500;
+  font-size: 22px;
+  padding: 0 10px;
+}
+
+.header__right {
+  position: absolute;
+  top: 7px;
+  right: 20px;
+}
+
+.header__container {
+  display: flex;
+  justify-content: end;
+  margin-bottom: 30px;
+}
+
+.header__btn {
+  position: absolute;
+  right: 0;
 }
 
 .header__window {
   width: 444px;
-  height: auto;
-  padding: 10px;
-  z-index: 10px;
-  margin-left: 10px;
-  position: absolute;
-  top: 20px;
-  right: 0;
-  background-color: red;
+  padding: 5px;
+}
+
+.header__wrapperCard {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 8px;
+  display: flex;
+  justify-content: space-between !important;
+  padding: 0 10px;
+}
+
+.header__card {
+  width: 70%;
+  height: 80px;
+  display: flex;
+}
+
+.header__img {
+  width: 80px !important;
+  height: 80px !important;
 }
