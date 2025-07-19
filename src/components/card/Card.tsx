@@ -12,6 +12,9 @@ import {
   Skeleton,
 } from "@mantine/core";
 
+import loader from "../../assets/loader.png";
+import cart from "../../assets/cart.png";
+
 type Props = {
   product: Product | null;
   "data-testid"?: string;
@@ -37,7 +40,7 @@ export const MyCard = ({ product, "data-testid": testId }: Props) => {
         <div style={{ position: "relative" }}>
           <Skeleton height={276} radius="lg" />
           <img
-            src="./assets/loader.png"
+            src={loader}
             alt="loading"
             style={{
               position: "absolute",
@@ -124,7 +127,7 @@ export const MyCard = ({ product, "data-testid": testId }: Props) => {
           onClick={handleAddToCart}
         >
           Add to cart
-          <img style={{ marginLeft: 10 }} src="./assets/cart.png" alt="cart" />
+          <img style={{ marginLeft: 10 }} src={cart} alt="cart" />
         </Button>
       </Group>
     </Card>

@@ -12,8 +12,7 @@ import {
 } from "@mantine/core";
 
 import cartWin from "../../assets/cartWin.png";
-
-// src="src/assets/cartWin.png"
+import cart_empty from "../../assets/cart_empty.png";
 
 export const Header = () => {
   const ctx = useContext(ThemeContext);
@@ -90,7 +89,7 @@ export const Header = () => {
                 {cartItems.length === 0 ? (
                   <>
                     <Image
-                      src="src/assets/cart_empty.png"
+                      src={cart_empty}
                       alt="no card"
                       style={{ width: 117, height: 106, margin: "24px auto" }}
                     />
